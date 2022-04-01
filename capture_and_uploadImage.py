@@ -12,7 +12,7 @@ def take_snapshot():
         #read the frames while the camera is on
         ret,frame = videoCaptureObject.read()
         #cv2.imwrite() method is used to save an image to any storage device
-        img_name = int(input("Enter name: "))
+        img_name = int(input("Enter pic number: "))
         cv2.imwrite(img_name, frame)
         start_time = time.time
         result = False
